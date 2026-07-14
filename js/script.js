@@ -162,7 +162,7 @@
     return n.toLocaleString("vi-VN") + "đ";
   }
 
-  /* ---------------- Cart (localStorage) ---------------- */
+  /* Cart (localStorage) */
   const CART_KEY = "dinh_cart_v1";
 
   function getCart() {
@@ -202,7 +202,7 @@
     });
   }
 
-  /* ---------------- Cart dropdown panel ---------------- */
+  /* Cart dropdown panel */
   function pathPrefix() {
     // index.html renders #featuredGrid; every other page already lives inside html/
     return document.getElementById("featuredGrid") ? "html/" : "";
@@ -301,7 +301,7 @@
     });
   }
 
-  /* ---------------- Checkout modal ---------------- */
+  /*Checkout modal */
   function buildCheckoutModal() {
     if (document.getElementById("checkoutOverlay")) return;
     document.body.insertAdjacentHTML(
@@ -434,7 +434,7 @@
     });
   }
 
-  /* ---------------- Product card markup ---------------- */
+  /*  Product card markup  */
   function productCard(p, linkPrefix) {
     return `
       <a class="product-card" href="${linkPrefix}chi-tiet.html?id=${p.id}">
@@ -454,7 +454,7 @@
       </a>`;
   }
 
-  /* ---------------- Home: featured grid ---------------- */
+  /*  Home: featured grid  */
   function renderFeatured() {
     const grid = document.getElementById("featuredGrid");
     if (!grid) return;
@@ -462,7 +462,7 @@
     grid.innerHTML = featured.map((p) => productCard(p, "html/")).join("");
   }
 
-  /* ---------------- Product listing page ---------------- */
+  /* Product listing page */
   function renderProductListing() {
     const grid = document.getElementById("productGrid");
     if (!grid) return;
@@ -486,7 +486,7 @@
     draw("all");
   }
 
-  /* ---------------- Product detail page ---------------- */
+  /* Product detail page  */
   function renderProductDetail() {
     const root = document.getElementById("productDetailRoot");
     if (!root) return;
@@ -596,7 +596,7 @@
     }
   }
 
-  /* ---------------- Contact form validation ---------------- */
+  /* Contact form validation */
   function initContactForm() {
     const form = document.getElementById("contactForm");
     if (!form) return;
@@ -635,7 +635,7 @@
     });
   }
 
-  /* ---------------- Newsletter form (home) ---------------- */
+  /* Newsletter form (home) */
   function initNewsletter() {
     const form = document.getElementById("newsletterForm");
     if (!form) return;
@@ -647,7 +647,7 @@
     });
   }
 
-  /* ---------------- Init ---------------- */
+  /*  Init  */
   document.addEventListener("DOMContentLoaded", () => {
     updateCartCount();
     initCart();
