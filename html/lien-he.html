@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liên hệ — ĐINH</title>
+<meta name="description" content="Liên hệ Phú để được tư vấn chọn giày đá banh theo mặt sân và form chân.">
+<link rel="icon" href="../assets/logogiaphu.jpg">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="brand">
+      <img src="../assets/logogiaphu.jpg" alt="Gia Phú">Gia Phú</a>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="../index.html">Trang chủ</a></li>
+        <li><a href="san-pham.html">Sản phẩm</a></li>
+        <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+        <li><a href="lien-he.html" class="active">Liên hệ</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <div class="cart-wrap">
+        <button type="button" class="cart-btn" id="cartBtn" aria-haspopup="true" aria-expanded="false">
+          <span class="label">Giỏ hàng</span>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <div class="cart-panel" id="cartPanel"></div>
+      </div>    </div>
+  </div>
+</header>
+
+<section class="turf-bg" style="padding:56px 0 40px;">
+  <div class="wrap">
+    <span class="eyebrow"><span class="stud"></span> Liên hệ</span>
+    <h1>Cần tư vấn chọn giày?</h1>
+    <p style="color:var(--chalk-dim); max-width:56ch; margin-top:14px;">Để lại thông tin, Phú sẽ liên hệ tư vấn mặt sân, form chân và size phù hợp trong vòng 24 giờ.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="contact-grid">
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field" id="wrap-name">
+          <label for="cf-name">Họ và tên</label>
+          <input type="text" id="cf-name" name="name">
+          <span class="field-error-msg">Vui lòng nhập họ tên của bạn.</span>
+        </div>
+        <div class="field" id="wrap-phone">
+          <label for="cf-phone">Số điện thoại</label>
+          <input type="tel" id="cf-phone" name="phone">
+          <span class="field-error-msg">Số điện thoại chưa đúng định dạng.</span>
+        </div>
+        <div class="field" id="wrap-email">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email">
+        
+        </div>
+        <div class="field">
+          <label for="cf-court">Mặt sân bạn hay đá</label>
+          <select id="cf-court" name="court">
+            <option value="fg">Sân cỏ tự nhiên (FG)</option>
+            <option value="tf">Sân cỏ nhân tạo (TF)</option>
+            <option value="ic">Futsal / trong nhà (IC)</option>
+            <option value="unsure">Chưa chắc, cần tư vấn</option>
+          </select>
+        </div>
+        <div class="field" id="wrap-message">
+          <label for="cf-message">Nội dung</label>
+          <textarea id="cf-message" name="message" placeholder="Cho ĐINH biết size chân, ngân sách hoặc mẫu giày bạn quan tâm..."></textarea>
+          <span class="field-error-msg">Vui lòng nhập nội dung (ít nhất 6 ký tự).</span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Gửi liên hệ</button>
+        <p class="form-msg" id="contactMsg"></p>
+      </form>
+
+      <div>
+        <div class="contact-info-card">
+          <div class="info-row">
+            <span class="stud"></span>
+            <div>
+              <h3>Cửa hàng</h3>
+              <p>819, khóm 3, phường 7, TP Trà Vinh</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="stud"></span>
+            <div>
+              <h3>Điện thoại</h3>
+              <p>0339579401</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="stud"></span>
+            <div>
+              <h3>Email</h3>
+              <p>giaphunguyen054@gmail.com</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand"><img src="../assets/logogiaphu.jpg" alt="Gia Phú">Gia Phú</a>
+        <p>Giày đá banh chính hãng cho mọi mặt sân — từ phong trào đến bán chuyên.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Điều hướng</h3>
+        <ul>
+          <li><a href="../index.html">Trang chủ</a></li>
+          <li><a href="san-pham.html">Sản phẩm</a></li>
+          <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+          <li><a href="lien-he.html">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Hỗ trợ</h3>
+        <ul>
+          <li><a href="lien-he.html">Hướng dẫn chọn size</a></li>
+          <li><a href="lien-he.html">Đổi trả</a></li>
+          <li><a href="lien-he.html">Vận chuyển</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Liên hệ</h3>
+        <ul>
+          <li>0339579401</li>
+          <li>giaphunguyen054@gmail.com</li>
+          <li>Trà Vinh</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Gia Phú. Bảo lưu mọi quyền.</span>
+      <span class="stud-row"><span class="stud"></span> Chuẩn từng cú chạm</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
